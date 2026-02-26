@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-Safe Careers Navigator</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" >
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="eyebrow">🌊 The AI Tsunami — Dunno Why I made it</div>
+    <h1>Find Your <span>AI-Safe</span><br>Career Path</h1>
+    <p class="subtitle">Explore careers that stay resilient as AI reshapes the job market. Tap any card to learn more — including how to get started. (You ain't getting job)</p>
+
+    <div class="stats-bar">
+      <div class="stat-chip"><span class="dot dot-red"></span> 85M jobs at risk by 2026 (WEF)</div>
+      <div class="stat-chip"><span class="dot dot-green"></span> 97M new jobs to be created</div>
+      <div class="stat-chip"><span class="dot dot-blue"></span> Human edge = empathy + judgment</div>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All Fields</button>
+      <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+      <button class="filter-btn" data-filter="tech">Tech & AI</button>
+      <button class="filter-btn" data-filter="trades">Skilled Trades</button>
+      <button class="filter-btn" data-filter="human">Human-First</button>
+      <button class="filter-btn" data-filter="creative">Creative</button>
+      <button class="filter-btn" data-filter="law">Law & Governance</button>
+    </div>
+
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="search" placeholder="Search careers, skills, sectors...">
+    </div>
+  </header>
+
+  <div class="grid" id="grid"></div>
+
+  <div class="footer-note">
+    Data sources: <a href="https://chatgpt.com"> CHATGPT </a> ,
+                  <a href="https://claude.ai/new">Claude</a> ,
+                  <a href="https://gemini.google.com">Gemini</a> ,
+                  <a href="https://grok.com">Grok</a>
+    <em>"AI-proof doesn't mean AI-free — it means AI can't replace your core value."</em>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal" onclick="closeModal(event)">
+  <div class="modal" id="modal-content">
+    <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
